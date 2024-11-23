@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realistic Slot Machine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spinSound">
+    <source src="spin-sound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="winSound">
+    <source src="win-sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Slot Game Interface -->
+  <div class="container">
+    <h1 class="casino-title">🎰 Realistic Slot Game 🎲</h1>
+    <div class="credit-panel">
+      <p>Kredit: <span id="credits">500</span></p>
+      <p>Total Taruhan: <span id="totalBet">10</span></p>
+      <label for="betAmount">Taruhan per Payline:</label>
+      <select id="betAmount">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+
+    <!-- Slot Machine -->
+    <div class="slot-machine">
+      <div class="reel" id="reel1"></div>
+      <div class="reel" id="reel2"></div>
+      <div class="reel" id="reel3"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="spinButton">Spin</button>
+      <button id="maxBetButton">Max Bet</button>
+      <button id="autoSpinButton">Auto Spin</button>
+      <button id="toggleMusic">Matikan Musik</button>
+    </div>
+
+    <!-- Pay Table -->
+    <div class="paytable">
+      <h2>Pay Table</h2>
+      <p>🍒 x3 = 50</p>
+      <p>🍋 x3 = 100</p>
+      <p>🍉 x3 = 150</p>
+      <p>⭐ x3 = 500</p>
+      <p>🔔 x3 = 1000</p>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
